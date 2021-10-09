@@ -1,0 +1,3 @@
+# SCPSLAutosplitter
+
+splits automagically.
