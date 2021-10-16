@@ -1,10 +1,14 @@
 # SCPSLAutosplitter
 
+## How to use
+Install python, and run `pip install Pillow` and `pip install Pynput`
 Settings in Livesplit needed (you can go in the code and change stuff if you want to customize): </br>
 Split hotkey: F7 </br>
 Stop hotkey: F6 </br>
 
 You may want to set the start time to ~half a second as it takes a small amount of time by default for the program to check if you've started.
+
+Run the .py file
 
 ## FAQ/Troubleshooting
 It's not detecting my start! : Go in and mess with the ranges, as well as the getpixel(x,y) values. It will have to be trial and error. </br>
