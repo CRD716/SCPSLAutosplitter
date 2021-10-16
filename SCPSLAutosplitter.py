@@ -21,9 +21,9 @@ while True:
 	keyboard = Controller()
 
 	if (r in range(230,256)) & (g in range(135, 150)) & (b in range(0,5)): #play around with these ranges.
-		print("ORANG DETECTED!")
+		# print("ORANG DETECTED!")
 		keyboard.press(Key.f7)
 		sleep(20)
 	else:
-		print("nope")
+		# print("nope")
 		sleep(0.5)
