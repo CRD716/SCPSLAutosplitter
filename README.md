@@ -1,7 +1,7 @@
 # SCPSLAutosplitter
 
 ## How to use
-Install python, and run `pip install Pillow` and `pip install Pynput`
+Install python, and run `pip install Pillow` and `pip install Pynput` </br>
 Settings in Livesplit needed (you can go in the code and change stuff if you want to customize): </br>
 Split hotkey: F7 </br>
 Stop hotkey: F6 </br>
