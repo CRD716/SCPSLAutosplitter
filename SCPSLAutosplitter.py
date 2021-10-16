@@ -1,6 +1,42 @@
 from pynput.keyboard import Key, Controller
+from pynput.keyboard import Listener
 from PIL import ImageGrab#, ImageDraw
 from time import sleep
+
+keyboard = Controller()
+
+def on_press(key):
+	if key == Key.f5:
+		#Stop livesplit
+		keyboard.press(Key.f6)
+		sleep(0.05)
+		keyboard.release(Key.f6)
+		#open console
+		keyboard.press('`')
+		sleep(0.05)
+		keyboard.release('`')
+		#seed
+		keyboard.type("seed")
+		keyboard.press(Key.enter)
+		sleep(0.05)
+		keyboard.release(Key.enter)
+		#restart
+		sleep(1)
+		keyboard.type("restart")
+		keyboard.press(Key.enter)
+		sleep(0.05)
+		keyboard.release(Key.enter)
+		#seed again
+		sleep(5)
+		keyboard.type("seed")
+		keyboard.press(Key.enter)
+		sleep(0.05)
+		keyboard.release(Key.enter)
+		sleep(0.5)
+		keyboard.press('`')
+		sleep(0.05)
+		keyboard.release('`')
+	return 0
 
 while True:
 	screen = ImageGrab.grab()
@@ -18,12 +54,20 @@ while True:
 
 	print(r, g, b)
 
-	keyboard = Controller()
+	
+
+	
 
 	if (r in range(230,256)) & (g in range(135, 150)) & (b in range(0,5)): #play around with these ranges.
 		# print("ORANG DETECTED!")
 		keyboard.press(Key.f7)
+		sleep(0.05)
+		keyboard.release(Key.f7)
 		sleep(20)
+		
+		with Listener(on_press=on_press) as listener:
+			listener.join()
+
 	else:
 		# print("nope")
 		sleep(0.5)
