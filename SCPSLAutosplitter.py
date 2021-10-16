@@ -17,9 +17,13 @@ while True:
 	r, g, b = screen.getpixel((width/2, height/2.5)) #modify x and y if it isn't working for you
 
 	print(r, g, b)
-	if (r in range(230,255)) & (g in range(135, 150)) & (b in range(0,5)): #play around with these ranges.
+
+	keyboard = Controller()
+
+	if (r in range(230,256)) & (g in range(135, 150)) & (b in range(0,5)): #play around with these ranges.
 		print("ORANG DETECTED!")
-		sleep(1000)
+		keyboard.press(Key.f7)
+		sleep(20)
 	else:
 		print("nope")
-		sleep(200)
+		sleep(0.5)
