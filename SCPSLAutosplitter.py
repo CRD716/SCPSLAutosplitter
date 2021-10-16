@@ -52,11 +52,7 @@ while True:
 
 	r, g, b = screen.getpixel((width/2, height/2.5)) #modify x and y if it isn't working for you
 
-	print(r, g, b)
-
-	
-
-	
+	# print(r, g, b)
 
 	if (r in range(230,256)) & (g in range(135, 150)) & (b in range(0,5)): #play around with these ranges.
 		# print("ORANG DETECTED!")
@@ -70,4 +66,4 @@ while True:
 
 	else:
 		# print("nope")
-		sleep(0.5)
+		sleep(0.15) #lower this for larger cpu usage but more accurate timing
