@@ -36,7 +36,7 @@ def on_press(key):
 		keyboard.press('`')
 		sleep(0.05)
 		keyboard.release('`')
-	return False
+		return False
 
 while True:
 	screen = ImageGrab.grab()
