@@ -7,7 +7,7 @@ Settings in Livesplit needed (you can go in the code and change stuff if you wan
 Split hotkey: F7 </br>
 Reset hotkey: F6 </br>
 
-You may want to set the start time to ~a quarter of a second as it takes a small amount of time by default for the program to check if you've started.
+You may want to set the start time to 0.5s as it takes a small amount of time by default for the program to check if you've started.
 
 Run the .py file
 
@@ -18,7 +18,7 @@ Remember to check the "Add to PATH" box when installing! </br>
 Open Command Prompt on windows, and Terminal on Linux. </br>
 Enter `pip install Pillow` and after `pip install Pynput`. </br>
 In Livesplit, set the Split hotkey to F7, and the Reset Hotkey to F6. </br>
-Edit Splits> Start Timer at: 0.1 </br>
+Edit Splits> Start Timer at: 0.5 </br>
 Double click/run the .py file. </br>
 Start up a round, it should split once when you spawn in as d class. </br>
 There is a 15 second cooldown from the first split until you can reset. </br>
