@@ -11,7 +11,7 @@ You may want to set the start time to ~half a second as it takes a small amount 
 
 Run the .py file
 
-#How to install (Long)
+# How to install (Long)
 
 Install the latest version of python from https://www.python.org/downloads/ </br>
 Remember to check the "Add to PATH" box when installing!
