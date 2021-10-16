@@ -59,7 +59,7 @@ while True:
 		keyboard.press(Key.f7)
 		sleep(0.05)
 		keyboard.release(Key.f7)
-		sleep(15)
+		sleep(12)
 		
 		with Listener(on_press=on_press) as listener:
 			listener.join()
