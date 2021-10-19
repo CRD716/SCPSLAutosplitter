@@ -2,17 +2,17 @@
 
 ## How to use (Quick)
 
+Enable Fast Fade in SCPSL
 Install python, and run `pip install Pillow` and `pip install Pynput` </br>
 Settings in Livesplit needed (you can go in the code and change stuff if you want to customize): </br>
 Split hotkey: F7 </br>
 Reset hotkey: F6 </br>
-
 You may want to set the start time to 0.5s as it takes a small amount of time by default for the program to check if you've started.
-
 Run the .py file
 
 # How to install (Long)
 
+Ingame enable fast fade.
 Install the latest version of python from https://www.python.org/downloads/ </br>
 Remember to check the "Add to PATH" box when installing! </br>
 Open Command Prompt on windows, and Terminal on Linux. </br>
